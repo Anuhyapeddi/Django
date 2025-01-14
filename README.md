@@ -9,7 +9,7 @@ Files in Django Project:
 
 * _init_.py - Tells python treat this directory as a python package.
 * asgi.py  and wsgi.py - These are special configuration files that we don't need to deal with, but these files helps django to communicate with the server
-* settings.py - used to install different django application, install pulgins, chaging middleware, chaging database engine, and also deploy in the server using secret_key
+* settings.py - used to install different django application, install pulgins, changing middleware, changing database engine, and also deploy in the server using secret_key
 * urls.py - used to configure different urls routes that can direct to different django applications.
 * manage.py - act like a command line tool, it allows us to run special commands like make database migrations and run python server.
 * admin.py - register database models to view them on admin panel.
@@ -21,3 +21,33 @@ Creating new app and ruuning in django project:
 
 * To create a new app - python3 manage.py startapp app_name
 * To run the django application - python3 manage.py runserver
+
+Django Template Language
+
+* we can send HTML scripts in response
+```python
+  def home(request):
+      return HttpResponse('<h1>Hello World</h1>')
+```
+* what if we have large file of HTML, and HTML files are static files. To make it dynamic we have to use Django Template Language.
+* create a template folder and create a html file in it.
+* Now, call the html file
+```python
+  def home(request):
+      return render(request, 'file_name.html')
+```
+
+Flow
+
+user -> django -> url -> view -> template and model -> database
+
+
+
+
+
+
+
+
+
+
+
