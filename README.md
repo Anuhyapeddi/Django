@@ -14,15 +14,18 @@ Files in Django Project:
 * manage.py - act like a command line tool, it allows us to run special commands like make database migrations and run python server.
 * admin.py - register database models to view them on admin panel.
 * models.py - where we write our database models.
+* serializer.py - here we convert our model to JSON formate which we can access by api.
 * tests.py -  where we write some automated testcases.
 * views.py - where we can create and access out websites request.
 
-Creating new app and ruuning in django project:
+Creating new app and runing in django project:
 
 * To create a new app - python3 manage.py startapp app_name
+* To make migration - python3 manage.py makemigrations
+* python3 manage.py migrate
 * To run the django application - python3 manage.py runserver
 
-Django Template Language
+Django Template Language (NOTE: Avoid this if you are working with backend)
 
 * we can send HTML scripts in response
 ```python
