@@ -13,6 +13,13 @@ How to create a new project
 * pip3 install django - install django (here django web framework)
 * pip3 install django djangorestframework - install the django rest framework (used to create rest api's)
 
+Creating new app and runing in django project:
+
+* To create a new app - python3 manage.py startapp app_name
+* To make migration - python3 manage.py makemigrations
+* python3 manage.py migrate
+* To run the django application - python3 manage.py runserver
+
 Files in Django Project:
 
 * _init_.py - Tells python treat this directory as a python package.
@@ -25,13 +32,6 @@ Files in Django Project:
 * serializer.py - here we convert our model to JSON formate which we can access by api.
 * tests.py -  where we write some automated testcases.
 * views.py - where we can create and access out websites request.
-
-Creating new app and runing in django project:
-
-* To create a new app - python3 manage.py startapp app_name
-* To make migration - python3 manage.py makemigrations
-* python3 manage.py migrate
-* To run the django application - python3 manage.py runserver
 
 Django Template Language (NOTE: Avoid this if you are working with backend)
 
