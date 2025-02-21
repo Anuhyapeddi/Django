@@ -5,6 +5,14 @@
 * company's like instagram, pinterest and spotify uses django rest framework.
 * it generally used because it is fast, have many components, gives security and scalability.
 
+How to create a new project
+
+* Go to the directory where you want to create a project
+* python3 -m venv venv - to create a virtual environment (Before this I have create another project of django, so to avoid configuratuion issue I have create a virual env)
+* source venv/bin/activate - to activate the virtual environment
+* pip3 install django - install django (here django web framework)
+* pip3 install django djangorestframework - install the django rest framework (used to create rest api's)
+
 Files in Django Project:
 
 * _init_.py - Tells python treat this directory as a python package.
